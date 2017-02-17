@@ -67,7 +67,7 @@ object WebApi {
   }
 
   def resultToTable(result: Any): Map[String, Any] = {
-    Map(ResultKey -> result)
+    Map(StatusKey -> "OK",ResultKey -> result)
   }
 
   def resultToByteIterator(jobReport: Map[String, Any], result: Iterator[_]): Iterator[_] = {
